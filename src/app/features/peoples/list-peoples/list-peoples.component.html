@@ -1,0 +1,13 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+/>
+
+<button (click)="clickPeopleAdd()">[ + ]</button>
+<div class="row">
+  <div class="col s12 m5">
+    <div class="card-panel teal" *ngFor="let p of peoples">
+      <span class="white-text"> {{ p.firstname }} {{ p.lastname }} </span>
+    </div>
+  </div>
+</div>
