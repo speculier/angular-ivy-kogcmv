@@ -4,14 +4,15 @@ import { PeopleDto } from '../models/peoples-dto';
 @Component({
   selector: 'app-edit-people',
   templateUrl: './edit-people.component.html',
-  styleUrls: ['./edit-people.component.css']
+  styleUrls: ['./edit-people.component.css'],
 })
 export class EditPeopleComponent implements OnInit {
-  people !: PeopleDto;
+  people: PeopleDto = {
+    firstname: 'Anakin',
+    lastname: 'Skywalker',
+  };
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
