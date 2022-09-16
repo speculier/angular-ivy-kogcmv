@@ -4,12 +4,11 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
-import { MenuComponent } from './shared/ui/components/menu/menu.component';
-import { FilmsModule } from './features/films/films.module';
+import { PeoplesModule } from './features/peoples/peoples';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, FilmsModule, HttpClientModule],
+  imports: [BrowserModule, FormsModule, PeoplesModule, HttpClientModule],
   declarations: [AppComponent, HelloComponent],
-  bootstrap: [AppComponent, MenuComponent],
+  bootstrap: [AppComponent, PeoplesModule],
 })
 export class AppModule {}
